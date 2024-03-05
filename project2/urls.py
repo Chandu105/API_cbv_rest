@@ -19,5 +19,5 @@ from django.urls import path
 from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('prodcrud/',prodcrud.as_view(),name='prodcrud'),
+    path('prodcrud/<product_id>',prodcrud.as_view(),name='prodcrud'),
 ]
